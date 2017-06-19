@@ -18,7 +18,7 @@ the _cf-redis-commander_ is tested with nodejs buildpack _v1.5.36_
 1) git clone this repository:
 
 ```
-git clone https://github.com/komushi/cf-redis-commander
+git clone https://github.com/oahcran/cf-redis-commander
 cd cf-redis-commander
 ```
 
