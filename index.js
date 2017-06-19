@@ -14,14 +14,13 @@ var cfenv = require("cfenv");
 var appEnv = cfenv.getAppEnv();
 var services = appEnv.getServices();
 
-
-
 // function to get credential from cf env
 var getCredentials = function() {
 
 	var appEnv = cfenv.getAppEnv();
 	var services = appEnv.getServices();
-console.log(services);
+  console.log(services);
+
 	for (service in services) {
 	  if (services[service].tags.indexOf("redis") >= 0) {
 	    var credentials = services[service]["credentials"]
@@ -39,7 +38,7 @@ console.log(services);
 var credentials = getCredentials();
 
 
-var cmd = "./node_modules/.bin/redis-commander";
+var cmd = "$HOME/node_modules/.bin/redis-commander";
 cmd += " --redis-port " + credentials.port;
 cmd += " --redis-host " + credentials.host;
 cmd += " --redis-password " + credentials.password;
