@@ -19,7 +19,7 @@ var getCredentials = function() {
 
 	var appEnv = cfenv.getAppEnv();
 	var services = appEnv.getServices();
-  console.log(services);
+    console.log(services);
 
 	for (service in services) {
 	  if (services[service].tags.indexOf("redis") >= 0) {

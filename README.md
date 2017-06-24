@@ -44,11 +44,15 @@ cf push
 ```
 
 
-**NOTE**
+### **NOTE**
 
-The deployment of _cf-redis-commander_ requires internet access to download _redis-commander _and its dependencies during staing phase. 
+The deployment of _cf-redis-commander_ requires internet access to download _redis-commander_ and its dependencies during staing phase. 
 
-If using it at a Cloud Foundry environment without direct internet accesds, please ask the administrator to set **HTTP(s) Proxy** at [staging environment variable group](https://docs.cloudfoundry.org/devguide/deploy-apps/environment-variable.html#evgroups)
+If using it at a Cloud Foundry environment without direct internet access, two options: 
+
+1. Set **HTTP(s) Proxy** at [staging environment variable group](https://docs.cloudfoundry.org/devguide/deploy-apps/environment-variable.html#evgroups). (requires admin access)
+
+2. [Using Yarn in a Disconnected Environment](https://docs.cloudfoundry.org/buildpacks/node/index.html#yarn_disconnected)
 
 
 ## About Redis Commander 
