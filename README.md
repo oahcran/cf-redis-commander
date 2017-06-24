@@ -59,6 +59,9 @@ If using it at a Cloud Foundry environment without direct internet access, two o
 
 1. [Redis GUI](https://redislabs.com/blog/so-youre-looking-for-the-redis-gui/)
 
-2. [Redis Commander](https://www.npmjs.com/package/redis-commander)
+2. [Redis CLI Commands Reference](https://redis.io/commands)
 
-3. [cfenv](https://www.npmjs.com/package/cfenv)
+3. [NPM - Redis Commander](https://www.npmjs.com/package/redis-commander)
+
+4. [NPM - cfenv](https://www.npmjs.com/package/cfenv)
+
